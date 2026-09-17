@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "named-entity-recognition"
+version = "0.1.0"
+description = "Exploratory NLP workflow for analyzing fake-vs-real news headlines with entity-aware preprocessing."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Vishnu Vemula" }]
+license = { text = "MIT" }
+keywords = ["nlp", "named-entity-recognition", "fake-news", "text-analysis"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Linguistic",
+]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.setuptools.package-dir]
+src = "."
